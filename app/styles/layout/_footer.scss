@@ -1,0 +1,153 @@
+.footer{
+   font-family: $font-time-new-roman;
+   
+   @media (min-width:$px-1200){
+      margin: 0 auto;
+   }
+
+   &__baner{
+      text-align: center;
+      .container{
+         &__banner{
+            margin-left: 20px;
+            @media (max-width:1128px){
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__nav{
+      margin-top:61px;
+      font-family:$font-time-new-roman;
+
+      .container{
+         font-size:$font-size-12;
+         &__block1{
+            h2{
+               font-size: $font-size-18;
+               color:$color-h2;
+            }
+            a{
+               text-decoration:$text-decoration-none;
+               color:$color-a;
+            }
+         }
+
+         &__block2{
+            h2{
+               font-size: $font-size-18;
+               color:$color-h2;
+            }
+            a{
+               text-decoration:$text-decoration-none;
+               color:$color-a;
+            }
+         }
+
+         &__block3{
+            h2{
+               font-size: $font-size-18;
+               color:$color-h2;
+            }
+            p{
+               color:$color-a;
+            }
+
+            .icon{
+               margin-top: -20px !important;
+               
+               @media (max-width:$px-1200){
+                  margin-bottom: 16px;
+               }
+               .span{
+                  font-size:$font-size-12;
+               }
+
+               &__fb{
+                  margin: 15px 6px 0 6px;
+                  &:hover{
+                        color:$color-i;
+                  }
+               }
+
+               &__wifi{
+                  margin-top: -3px;
+                  margin-left: 5px;
+                  color:$color-black !important;
+
+                  &:hover{
+                        color:$color-i !important;
+                  }
+               }
+            }
+            .form-block3{
+               &__input{
+                  font-style: $font-style-italic;
+                  border: 1px solid $color-black;
+                  padding: 3px 3px 3px 7px;    
+                  
+                  &:hover{
+                     outline:none;
+                     border: 1px solid $color-black;
+                  }
+
+                  @media (min-width:$px-992) {
+                     padding: 3px 0;
+                     width: 140px;
+                  }
+               }
+               .send{
+                  height: 26px;
+
+                  @media (min-width:$px-992) {
+                     margin: 1px 0;
+                  }
+               }
+            }        
+         }
+         
+         &__block4{
+            .span{
+               font-size:$font-size-12;
+            }
+            h2{
+               font-size: $font-size-18;
+               color:$color-h2;
+            }
+            i{
+               font-style: $font-style-italic;
+               color: $color-i;
+            }
+            .block4-span{
+               margin-bottom: 8px;
+            }
+            .block4-span-2{
+               margin-top: 8px;
+            }
+         }
+      }
+   }
+   
+   hr{
+      width:100%;
+      height: 2px;
+      color:$color-a;
+   }
+   &__contact{
+      .container{     
+         h4{
+            font-family:$font-myriad-pro;
+            font-size: $font-size-12;
+            color:$color-a;
+            font-weight: normal;
+         }
+
+         .icon_end{
+            margin: 0 9px;
+            font-size: $font-size-20;
+            background-color:$color-white;
+         }
+      }
+   }
+ }

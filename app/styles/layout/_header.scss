@@ -1,0 +1,144 @@
+.sub-menu {
+   padding: 0 !important;
+   margin: 0;
+   font-family: $font-time-new-roman;
+
+   @media (max-width:$px-992){
+      position: $position-relative;
+   }
+   .container {
+      .nav-sub-menu {
+         margin-left: -10px;
+
+         @media (max-width:$px-992){
+            padding-top:60px;
+         }
+
+         .list-sub{
+
+            &__a:hover {
+               color: $a-hover-sub-menu !important;
+               text-decoration: underline;
+            }
+
+            &__a{
+               color: $color_menu-sub-a;
+               font-size: $font-size-12;
+            }
+         }
+      }
+      .nav-sub-form {
+         margin-right: 45px;
+         
+         @media (max-width:$px-992){
+            position:$position-absolute;
+            top: 20px;
+            left: 72px;
+         }
+
+         &__input {
+            border: $border-none;
+            font-style:$font-style-italic;
+            font-size: $font-size-12;
+            outline: none;
+            padding-right: 100px;
+         }
+
+         &__button {
+            border: $border-none;
+            font-size: $font-size-12;
+            background-color: $color-white;
+
+            &__a {
+            color: $color-black;
+            text-decoration: $text-decoration-none;
+            }
+         }
+      }
+      .node-sub{
+         &__slide{
+            color: $color-white;
+            font-size:$font-size-22;
+
+            @media (max-width:$px-992){
+               position: $position-absolute;
+               top: 20px;
+               right: 30px;
+               color:$color-slide;
+               font-size:$font-size-22 ;
+            }
+
+         }
+      }
+   }
+}
+ // main menu
+ .main-menu {
+   background-color: $bg-header;
+   font-family: $font-time-new-roman;
+
+   @media (max-width:$px-992){
+      position: $position-relative;
+   }
+
+   .container{
+
+      &__logo{
+         @media (max-width:$px-992){
+            background-color:$color-black;
+         }
+
+         img{
+            @media (max-width:$px-992){
+               position: $position-absolute!important;
+               left: 30px !important;
+               top: 20px !important;
+               display:$display-block;
+            }
+         }
+      }
+
+      &__main-menu{
+         @media (max-width:$px-992){
+            padding-top: 150px;
+         }
+         .nav-main-menu {
+            margin: 0 auto;
+            .nav-item {
+               margin: 0 20px;
+   
+               &__main {
+                  font-size: $font-size-13;
+                  &:hover{
+                     color: $a-hover-main-menu !important;
+                  }
+               }
+            }
+            .list{
+               @media (min-width:$px-992){
+                  margin: 0 6px !important;
+               }
+               @media (max-width:$px-1200){
+                  margin: 0 6px !important;
+               }
+            }
+         }
+      }
+
+      &__click{
+         #slide{
+            color:$color-black;
+            font-size:$font-size-22 ;
+            @media (max-width:$px-992){
+               position: $position-absolute;
+               top: 20px;
+               right: 30px;
+               color: $color-white;
+               font-size: $font-size-22;
+            }
+         }
+      }
+     
+   }
+ }
+ 
