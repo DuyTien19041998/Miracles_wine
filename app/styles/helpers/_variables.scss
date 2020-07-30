@@ -12,6 +12,24 @@ $color-grey-light-2: #e9ecf3;
 $color-grey-dark-1: #2c3e50;
 $color-grey-dark-2: #757a97;
 
+$bg-header:#000;
+$a-hover-main-menu:#e6ae48;
+$a-hover-sub-menu:#e6ae48;
+$color-white:#fff;
+$color-black:#000;
+$color-slide:#f36009;
+$color_menu-sub-a:#8b8b8b;
+$color-h2:#000;
+$color-list:#818181;
+$color-i:#e7b14f;
+$color-nav: #e7e7e7;
+$color-span:#c5c5c5;
+$color-a:#c1c1c1;
+$bg-icon-hover:#e6ae48;
+$color-sup-slide1:#b4b4b4;
+$color-right-p:#1a1a1a;
+$color-price:#e6ae48;
+
 $box-shadow-1: 0 1rem 4rem rgba($color-black, 0.3);
 // Z-INDEXES
 $z-index0: -10;
@@ -27,50 +45,45 @@ $z-index9: 900;
 
 // FONTS
 $font-primary: "Roboto", sans-serif;
-// menu_sub
-$color_menu-sub-a:#8b8b8b;
-// header
-$bg-header:#000000;
-$a-hover-main-menu:#e6ae48;
-$a-hover-sub-menu:#e6ae48;
-$font-family-header:'times new Roman';
-
-$font-size-12:12px;
-$font-size-13:13px;
-$font-size-14:14px;
-$font-size-18:18px;
-$font-size-20:20px;
-$font-size-22:22px;
-
 $font-time-new-roman:'time new Roman';
 $font-myriad-pro:'Myriad Pro';
 
-$color-white:#ffffff;
-$color-black:#000000;
-$color-slide:#f36009;
+// font-size
+$font-size-7:7px;
+$font-size-10:10px;
+$font-size-12:12px;
+$font-size-13:13px;
+$font-size-14:14px;
+$font-size-16:16px;
+$font-size-18:18px;
+$font-size-20:20px;
+$font-size-21:21px;
+$font-size-22:22px;
+$font-size-25:25px;
+$font-size-30:30px;
+$font-size-34:34px;
 
-$width-100:100%;
-
-$px-992:992px;
-$px-768:768px;
+// responsive
+$px-1550:1550px;
 $px-1200:1200px;
-$px-600:600px;
+$px-992:992px;
 $px-781:781px;
+$px-768:768px;
+$px-600:600px;
+$px-576:576px;
+$px-370:370px;
 
+// font-style
 $font-style-italic:italic;
 
+// position
+$display-block:block;
 $position-absolute:absolute;
 $position-relative:relative;
-
-$display-block:block;
-
-$border-none:none;
-
+// border
+$border-none:0;
+// text
 $text-decoration-none:none;
-// footer
-$color-h2:#000000;
-$color-a:#818181;
-$color-i:#e7b14f;
-$fontfamily-support-footer:'Myriad Pro';
-$color-black:#000000;
-$color-white:#ffffff;
+
+
+

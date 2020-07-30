@@ -1,52 +1,55 @@
+- var block1 = ["VỀ CHÚNG TÔI","GIAO HÀNG","CAM KẾT","LƯU TRỮ","CHÍNH SÁCH RIÊNG TƯ"]
+- var block2 = ["VẬN CHUYỂN TRẢ HÀNG","MUA HÀNG AN TOÀN","VẬN QUỐC TẾ","LIÊN KẾT","DỊCH VỤ GIẢM GIÁ"]
 .footer
     .footer__baner
         .container
-            .container__banner
-                 img.img_banner(src="./images/banner_footer.png", alt="banner footer")
+            .img-banner
+                 img.img-banner__img.img-fluid.img-thumbnail(src="./images/banner_footer.png", alt="banner footer")
     .footer__nav
         .container
             .row
-                ul.container__block1.col-12.col-xs-12.col-sm-12.col-md-12.col-lg-2
-                    h2 THÔNG TIN
-                    - var block1 = ["VỀ CHÚNG TÔI","GIAO HÀNG","CAM KẾT","LƯU TRỮ","CHÍNH SÁCH RIÊNG TƯ"]
-                        - for(var i = 0 ; i < block1.length; i++)
-                            li.item  
-                                a(href="#")= block1[i]
-                ul.container__block2.col-12.col-xs-12.col-sm-12.col-md-12.col-lg-2
-                    h2 MUA HÀNG
-                    - var block1 = ["VẬN CHUYỂN TRẢ HÀNG","MUA HÀNG AN TOÀN","VẬN QUỐC TẾ","LIÊN KẾT","DỊCH VỤ GIẢM GIÁ"]
-                        - for(var i = 0 ; i < block1.length; i++)
-                            li.item  
-                                a(href="#")= block1[i]
-                .container__block3.col-xs-12.col-sm-12.col-md-12.col-lg-3
-                    h2 GỬI EMAIL
-                    p Gửi mail cho chúng tôi để được hổ trợ 
-                    form.form-inline.my-2.my-lg-0.form-block3
-                        input.form-block3__input(type="text" placeholder="Enter your email..")
-                        img.send(src="./images/send.png", alt="send")
-                    br
-                    .icon
-                        span.fab.fa-twitter.icon__fb
-                        span.fab.fa-google-plus-g.icon__fb
-                        span.fas.fa-globe.icon__fb
-                        span.fab.fa-linkedin-in.icon__fb 
-                        span.fa.fa-wifi.icon__fb
-                .container__block4.col-xs-12.col-sm-12.col-md-12.col-lg-5
-                    h2  LIÊN HỆ
-                    img.block4-span(src="./images/location.png", alt="icon marker")
-                    span &nbsp; Tầng 4 tòa nhà Hà Nội Group , số 442 Đội Cấn <br>&nbsp;&nbsp;&nbsp;&nbsp; P Cống Vị , Quận Ba Đình , Hà Nội
+                .col-12.col-xs-12.col-sm-12.col-md-6.col-lg-2
+                    ul.container__block1
+                        h2 THÔNG TIN
+                            - for(var i = 0 ; i < block1.length; i++)
+                                li.item  
+                                    a.list-infor(href="#")= block1[i]
+                .col-12.col-xs-12.col-sm-12.col-md-6.col-lg-2    
+                    ul.container__block2
+                        h2 MUA HÀNG
+                            - for(var i = 0 ; i < block2.length; i++)
+                                li.item  
+                                    a(href="#")= block2[i]
+                .col-xs-12.col-sm-12.col-md-6.col-lg-4  
+                    .container__block3
+                        h2 GỬI EMAIL
+                        p Gửi mail cho chúng tôi để được hổ trợ 
+                        form.form-inline.my-2.my-lg-0.form-block3
+                            input.form-block3__input(type="text" placeholder="Enter your email..")
+                            img.send(src="./images/send.png", alt="send")
+                        br
+                        .icon
+                            span.fab.fa-twitter.icon__fb
+                            span.fab.fa-google-plus-g.icon__fb
+                            span.fas.fa-globe.icon__fb
+                            span.fab.fa-linkedin-in.icon__fb 
+                            span.fa.fa-wifi.icon__fb
+                .col-xs-12.col-sm-12.col-md-6.col-lg-4
+                    .container__block4
+                        h2  LIÊN HỆ
+                        img.block4-span(src="./images/location.png", alt="icon marker")
+                        span.container__block4__span &nbsp; Tầng 4 tòa nhà Hà Nội Group , số 442 Đội Cấn <br>&nbsp;&nbsp;&nbsp;&nbsp; P Cống Vị , Quận Ba Đình , Hà Nội
 
-                    br
-                    img.block4-span.block4-span-2(src="./images/fax.png", alt="fax")
-                    span &nbsp;&nbsp;(04) 6680 2332 - &nbsp;
-                    img.block4-span.block4-span-2(src="./images/fax.png", alt="fax")
-                    span &nbsp;&nbsp;(04) 6680 2332 
-                    br
-                    img.block4-span(src="./images/fax.png", alt="fax")
-                    span &nbsp;&nbsp;(04) 6680 2332 &nbsp;
-                    span.fas.fa-envelope
-                    i.block4-span &nbsp; Support@gmail.com
-    hr
+                        br
+                        img.container__block4__span.container__block4__span-2(src="./images/fax.png", alt="fax")
+                        span.container__block4__span &nbsp;&nbsp;(04) 6680 2332 - &nbsp;
+                        img.container__block4__span.container__block4__span-2(src="./images/fax.png", alt="fax")
+                        span.container__block4__span &nbsp;&nbsp;(04) 6680 2332 
+                        br
+                        img.container__block4__span(src="./images/fax.png", alt="fax")
+                        span.container__block4__span &nbsp;&nbsp;(04) 6680 2332 &nbsp;
+                        span.container__block4__span.fas.fa-envelope
+                        i.container__block4__span &nbsp; Support@gmail.com
     .footer__contact
         .container
             .row
